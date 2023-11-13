@@ -1,6 +1,6 @@
 <x-my-app-layout>
     <x-navigation></x-navigation>
-    <div>
+    <div class="bg-white">
         <div class="flex flex-col text-center  mb-10 px-32">
             <input type="text" id="moduleTitle"
                 class="border-transparent border-x-0 border-t-0 focus:ring-0 border-b-2 m-1 text-center text-4xl"
@@ -11,27 +11,27 @@
             <div class="mt-5">
 
                 <span onclick="updateModule({{ $module->id ?? '' }})"
-                    class="cursor-pointer inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Simpan
+                    class="cursor-pointer inline-flex items-center bg-purplewhite border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Simpan
                     Perubahan</span>
             </div>
         </div>
         <div class="mx-20 my-2">
-            <ul class="grid grid-flow-col text-center text-gray-500 bg-gray-100 rounded-full p-1">
+            <ul class="grid grid-flow-col text-center text-grey-pudar bg-gray-200 rounded-full p-1">
                 <li> <a onclick="toggleTab('#playlist')" href="#playlist" name='navTab'
                         class="flex justify-center py-4">Playlist Video</a> </li>
                 <li> <a onclick="toggleTab('#module')" href="#module" name='navTab'
-                        class="flex  justify-center   bg-white rounded-full shadow py-4">Module Settings</a> </li>
+                        class="flex  justify-center bg-white rounded-full shadow py-4">Module Settings</a> </li>
             </ul>
         </div>
     </div>
-    <section id="moduleTab" name='tab'class="text-gray-600 body-font block">
+    <section id="moduleTab" name='tab'class="text-gray-600 body-font block bg-white">
         <div class="container px-5 py-5 mx-auto">
 
 
             <div class="flex flex-wrap justify-center -m-4">
                 <div onclick="toggleModal('addModuleModal')" class="p-4 md:w-2/5">
                     <div
-                        class="flex justify-center items-center rounded-lg h-full text-lg bg-gray-100 p-8 flex-col hover:bg-gray-300">
+                        class="flex justify-center items-center rounded-lg h-full text-lg bg-purplewhite p-8 flex-col hover:bg-gray-300">
                         <div class="flex items-center justify-center">
                             <i class="material-icons text-xl m-1">add</i>
                             <div class="text-xl m-1">Tambah Modul</div>
@@ -41,7 +41,7 @@
                 </div>
                 @for ($i = 0; $i < count($children); $i++)
                     <div class="p-4 md:w-2/5">
-                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex rounded-lg h-full bg-purplewhite p-8 flex-col">
                             <div class="flex items-center mb-3">
                                 <div
                                     class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
@@ -88,14 +88,14 @@
             <div class="flex flex-wrap justify-center -m-4 p-5">
                 <div class="xl:w-1/3 md:w-1/2 p-4" onclick="toggleModal('addPlaylistModal')">
                     <div
-                        class="bg-gray-100 p-6 rounded-lg flex items-center h-full justify-center hover:bg-gray-300 cursor-pointer">
+                        class="bg-purplewhite p-6 rounded-lg flex items-center h-full justify-center hover:bg-gray-300 cursor-pointer">
                         <i class="material-icons text-xl m-1">add</i>
                         <div class="text-xl m-1">Tambah Playlist</div>
                     </div>
                 </div>
                 @foreach ($playlist as $playlistItem)
                     <div class="xl:w-1/3 md:w-1/2 p-4">
-                        <div class="bg-gray-100 p-6 rounded-lg text-sm">
+                        <div class="bg-purplewhite p-6 rounded-lg text-sm">
                             <img class="md:h-44 sm:h-32 lg:h-60 xl:h-48  rounded w-full object-cover object-center mb-6"
                                 src="{{ $playlistItem['snippet']['thumbnails']['high']['url'] }}" alt="content">
                             <h2 class="text-lg text-gray-900 font-medium title-font mb-1">

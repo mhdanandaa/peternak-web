@@ -1,20 +1,26 @@
-<section class="text-gray-600 body-font">
-    <div class="container px-5 py-5 mx-auto">
+<section class="text-gray-600 body-font bg-white">
+    <div class="container mx-auto">
         @if(isset($modules,$module))
+        <section class=" py-10 mb-10">
             <div class="flex flex-col text-center w-full mb-10">
-              <div class="sm:text-3xl text-left  mx-12 font-medium title-font text-gray-900 mb-2">{{$module->title}}</div>
-                <div class="text-base text-left  text-purple-900 tracking-widest mx-12 font-medium title-font ">{{$module->description}}</div>
+              <div class="sm:text-3xl text-center  mx-12 font-medium title-font text-grey-pudar mb-2">{{$module->title}}</div>
+              <div class="mx-10 rounded-xl">
+                <div class="text-base text-center  text-purple-900 tracking-widest mx-12 pt-4 font-medium title-font ">{{$module->description}}</div>
+                </div>
             </div>
+            </section>
+            <hr class="h-px mb-8 bg-purple-200 border-0 mx-10">
+
             <div class="flex flex-wrap justify-center -m-4">
                 @for ($i = 0; $i < count($modules); $i++)
                     <div class="p-4 md:w-2/5">
-                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex rounded-lg h-full bg-purplewhite p-8 flex-col">
                             <div class="flex items-center mb-3">
                                 <div
-                                    class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                                    class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-purple-900 text-white flex-shrink-0">
                                     <span>{{ $i + 1 }}</span>
                                 </div>
-                                <h2 class="text-gray-900 text-lg title-font font-medium">{{ $modules[$i]->title }}</h2>
+                                <h2 class="text-grey-pudar text-lg title-font font-medium">{{ $modules[$i]->title }}</h2>
                             </div>
                             <div class="flex-grow">
                                 <div>
@@ -34,7 +40,7 @@
                                 </div> --}}
                                 <div class="flex justify-between mt-3">
                                     <a href='{{ route('modulePage', ['module' => (last($moduleNames) == 'primary' ? '' : last($moduleNames).'/').$modules[$i]->name]) }}'
-                                        class=" text-indigo-500 inline-flex items-center">Learn More
+                                        class=" text-purple-900 inline-flex items-center">Learn More
                                         <i class="material-icons ml-1">arrow_forward</i>
                                     </a>
                                 </div>

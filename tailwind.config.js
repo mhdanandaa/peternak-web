@@ -10,12 +10,22 @@ export default {
     ],
 
     theme: {
+        
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'grey-pudar': '#3D3D3D',
+              },
         },
-    },
+        backgroundColor: theme => ({
+            ...theme('colors'),
+            'purplewhite': '#F4F4FA',
+
+           })
+         },
+    
 
     plugins: [forms],
 };

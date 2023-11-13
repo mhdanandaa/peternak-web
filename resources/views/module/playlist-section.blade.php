@@ -1,15 +1,14 @@
 @if (isset($playlist) && count($playlist) !== 0)
-    <section class=" bg-gray-100 min-h-full">
+    <section class=" bg-white min-h-full">
         <div class="px-10 py-5">
-            <div class="text-2xl mb-3">Playlist Unggulan kami</div>
-            <hr>
+            <div class="text-2xl text-grey-pudar font-medium mb-3">Playlist Unggulan kami</div>
         </div>
         <div class="flex justify-center">
 
 
             @foreach ($playlist as $playlistItem)
                 <div class="xl:w-1/3 md:w-1/2 p-4">
-                    <div class="bg-white p-6 rounded-lg text-sm">
+                    <div class="bg-purplewhite p-6 rounded-lg text-sm">
                         <img class="aspect-video rounded w-full object-cover object-center mb-6"
                             src="{{ $playlistItem['snippet']['thumbnails']['high']['url'] }}" alt="content">
                         <h2 class="text-lg text-gray-900 font-medium title-font mb-1">
