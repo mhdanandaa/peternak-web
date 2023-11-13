@@ -1,12 +1,10 @@
 <section class="text-gray-600 body-font bg-white">
-    <div class="container mx-auto">
+    <div class="container px-5 py-5 mx-auto">
         @if(isset($modules,$module))
         <section class=" py-10 mb-10">
             <div class="flex flex-col text-center w-full mb-10">
               <div class="sm:text-3xl text-center  mx-12 font-medium title-font text-grey-pudar mb-2">{{$module->title}}</div>
-              <div class="mx-10 rounded-xl">
                 <div class="text-base text-center  text-purple-900 tracking-widest mx-12 pt-4 font-medium title-font ">{{$module->description}}</div>
-                </div>
             </div>
             </section>
             <hr class="h-px mb-8 bg-purple-200 border-0 mx-10">
