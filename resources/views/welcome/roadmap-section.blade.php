@@ -2,8 +2,8 @@
     <div class="container px-5 py-5 mx-auto">
         @if(isset($modules,$module))
             <div class="flex flex-col text-center w-full mb-10">
-              <div class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2">{{$module->title}}</div>
-                <div class="text-xs text-indigo-500 tracking-widest mx-32 font-medium title-font ">{{$module->description}}</div>
+              <div class="sm:text-3xl text-left  mx-12 font-medium title-font text-gray-900 mb-2">{{$module->title}}</div>
+                <div class="text-base text-left  text-purple-900 tracking-widest mx-12 font-medium title-font ">{{$module->description}}</div>
             </div>
             <div class="flex flex-wrap justify-center -m-4">
                 @for ($i = 0; $i < count($modules); $i++)
@@ -22,7 +22,7 @@
                                         {!! $modules[$i]->description !!}
                                     </div>
                                 </div>
-                                <div class="flex border-t border-gray-200 py-2 w-full">
+                                {{-- <div class="flex border-t border-gray-200 py-2 w-full">
                                     <span class="text-gray-500">Created At : </span>
                                     <span class="ml-auto text-gray-900"
                                         name="">{{ date('D, d M y', strtotime($modules[$i]->created_at)) }}</span>
@@ -31,7 +31,7 @@
                                     <span class="text-gray-500">Updated At : </span>
                                     <span class="ml-auto text-gray-900"
                                         name="">{{ date('D, d M y', strtotime($modules[$i]->updated_at)) }}</span>
-                                </div>
+                                </div> --}}
                                 <div class="flex justify-between mt-3">
                                     <a href='{{ route('modulePage', ['module' => (last($moduleNames) == 'primary' ? '' : last($moduleNames).'/').$modules[$i]->name]) }}'
                                         class=" text-indigo-500 inline-flex items-center">Learn More
