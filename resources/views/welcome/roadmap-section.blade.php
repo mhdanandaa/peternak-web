@@ -1,19 +1,18 @@
 <section class="text-gray-600 body-font bg-meta">
-    <p class="text-purple-900 font-black pt-5 pl-14">KATEGORI</p>
     <div class="container px-5 py-5 mx-auto">
         @if(isset($modules,$module))
         <section class=" py-10 mb-10">
             <div class="flex flex-col text-center w-full mb-10">
-              <div class="sm:text-3xl text-center  mx-12 font-medium title-font text-biru-tosca mb-2">{{$module->title}}</div>
+              <div class="lg:text-4xl text-3xl font-black text-center  mx-12 title-font text-biru-tosca mb-2">{{$module->title}}</div>
                 <div class="text-base text-center  text-white tracking-widest mx-12 pt-4 font-medium title-font ">{{$module->description}}</div>
             </div>
             </section>
-            <hr class="h-px mb-8 bg-biru-tosca border-0 mx-10">
+            <hr class="h-px mb-8 bg-ungu-font border-0 mx-10">
 
             <div class="flex flex-wrap justify-center -m-4">
                 @for ($i = 0; $i < count($modules); $i++)
                     <div class="p-4 md:w-2/5">
-                        <div class="flex rounded-lg h-full bg-meta p-8 flex-col border-2 border-biru-tosca">
+                        <div class="flex rounded-lg h-full bg-meta p-8 flex-col border-2 border-ungu-font">
                             <div class="flex items-center mb-3">
                                 <div
                                     class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-purple-900 text-white flex-shrink-0">
