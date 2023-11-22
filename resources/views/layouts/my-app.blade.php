@@ -20,7 +20,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans text-gray-900 antialiased h-full bg-purplewhite">
+<body class="font-sans text-gray-900 antialiased h-full  scrollbar-thin scrollbar-thumb-ungu-font scrollbar-track-current">
     {{$slot}}
 </body>
 

@@ -30,7 +30,6 @@
                   <li class="mb-4">
                       <a href="#" class="hover:text-slate-900 ">Instagram</a>
                   </li>
-
               </ul>
           </div>
           <div>
