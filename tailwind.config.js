@@ -17,7 +17,7 @@ export default {
             colors: {
                 meta: "#0F172A",
                 "grey-pudar": "#3D3D3D",
-                "biru-tosca": "#22D3EE",
+                "biru-tosca": "#38BDF8",
                 "ungu-font": "#452090",
                 pink: "#FF00F1",
                 "ungu-gradient": "#873091",
