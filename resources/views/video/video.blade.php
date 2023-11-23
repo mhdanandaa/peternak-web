@@ -58,13 +58,13 @@
             </div>
             <!-- ... -->
             <div class="w-full lg:w-1/3 py-1">
-                <div class=" rounded-lg h-full lg:bg-gray-100   py-2">
+                <div class=" rounded-lg h-full lg:bg-meta text-white  py-2">
                     <div class="mb-1">
                         <span class="text-2xl lg:text-base p-2">Playlist Item</span>
                     </div>
                     @foreach ($videosPlaylist as $videoPlaylist)
                         <div onclick="window.location = '{{ route('videoPage', ['playlist_id' => $videoPlaylist['snippet']['playlistId'], 'video_id' => $videoPlaylist['contentDetails']['videoId']]) }}'"
-                            class="flex flex-wrap w-full py-2 hover:bg-gray-300 cursor-pointer">
+                            class="flex flex-wrap w-full py-2 hover:bg-gray-300 hover:text-ungu-font cursor-pointer">
                             <div class="flex lg:w-5/12 w-full px-1 ">
 
                                 <div class="lg:max-w-lg  mb-2 md:mb-0  aspect-[16/9]">

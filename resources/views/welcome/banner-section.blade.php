@@ -1,3 +1,4 @@
+  <!-- Banner Section -->
 <section style="background-image: url('{{ asset("assets/new-bg.svg")}}');" class="body-font">
     <div class="px-10 pt-24 mx-auto">
       <div class="flex flex-col text-center w-full">
@@ -9,3 +10,4 @@
       <a href="{{route('modulePage')}}" class="m-9 inline-flex text-white bg-ungu-font border-0 py-2 px-8 focus:outline-none hover:bg-white rounded text-lg">Mulai Belajar</a>
     </div>
   </section>
+  <!-- End Of Banner Section -->

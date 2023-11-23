@@ -19,7 +19,7 @@ export default {
                 "grey-pudar": "#3D3D3D",
                 "biru-tosca": "#22D3EE",
                 "ungu-font": "#452090",
-                pink: "#EC4899",
+                pink: "#FF00F1",
                 "ungu-gradient": "#873091",
                 "biru-gradient": "#04509B",
             },
@@ -32,6 +32,7 @@ export default {
             "ungu-font": "#452090",
             "ungu-gradient": "#873091",
             "biru-gradient": "#04509B",
+            "meta-pudar" : "#1A2132"
         }),
 
         backgroundImage: {

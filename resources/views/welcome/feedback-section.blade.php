@@ -1,4 +1,4 @@
-<div class="bg-meta">
+<!-- Feedback Section -->
 <section class="text-gray-600 body-font relative">
     <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
       <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -23,19 +23,19 @@
         </p>
         <div class="relative mb-4">
           <label for="name" class="leading-7 text-sm text-white">Name</label>
-          <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <input type="text" id="name" name="name" class="w-full bg-meta-pudar rounded border-b-4 border-white hover:border-ungu-font text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-white">Email</label>
-          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <input type="email" id="email" name="email" class="w-full  bg-meta-pudar rounded border-b-4 border-white hover:border-ungu-font text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
         <div class="relative mb-4">
           <label for="message" class="leading-7 text-sm text-white">Message</label>
-          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          <textarea id="message" name="message" class="w-full  bg-meta-pudar rounded border-b-4 border-white hover:border-ungu-font h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
         </div>
-        <button class="text-white bg-ungu-font border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Button</button>
+        <button class="text-white  bg-meta-pudar border-4 border-ungu-font py-2 px-6  focus:outline-none rounded text-lg">Submit</button>
         <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
       </div>
     </div>
   </section>
-</div>
+<!-- End Of Feedback Section -->
