@@ -1,5 +1,5 @@
 <!-- Overview Section -->
-<section class="text-gray-600 body-font ml-10 mr-10">
+<section id="overview" class="text-gray-600 body-font ml-10 mr-10">
   <div class="circlePosition w-[500px] h-[550px] bg-ungu-font rounded-[100%] absolute top-[150%] left-[10%] translate-x-[-50%] traslate-y-[-50%] blur-[100px]"></div>
   <div class="circlePosition w-[300px] h-[250px] bg-biru-gradient rounded-[100%] absolute top-[100%] left-[90%] translate-x-[-50%] traslate-y-[-50%] blur-[100px]"></div>
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">

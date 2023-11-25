@@ -1,5 +1,5 @@
 <!-- Raodmap Section  -->
-<section class="text-gray-600 body-font">
+<section id="roadmap" dclass="text-gray-600 body-font">
     <div class="container px-5 py-5 mx-auto">
         @if(isset($modules,$module))
         <section class=" py-10 mb-10">

@@ -4,7 +4,11 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="{{ asset("assets/nav-icon.svg")}}" class="h-8"/>
+                    <span class="self-center font-semibold whitespace-nowrap text-ungu-font">Peternak <span class="text-biru-tosca">Web |</span></span>
+                </a>
+                {{-- <div class="shrink-0 flex items-center">
                     @auth
                     <a href="{{ route('dashboard') }}">
                         <x-application-logo class="block h-9 w-auto fill-current text-white" />
@@ -14,7 +18,7 @@
                         <x-application-logo class="block h-9 w-auto fill-current text-white" />
                     </a>
                     @endauth
-                </div>
+                </div> --}}
                 @auth
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex ">
