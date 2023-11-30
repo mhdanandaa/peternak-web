@@ -13,17 +13,17 @@
                     <h1 class="title-font  text-3xl mb-4 font-medium text-white" name="videoTitle">
                         {{ $video['snippet']['title'] }}
                     </h1>
-                    <div class="flex border-t border-ungu-font py-2 w-full">
+                    <div class="flex border-t  py-2 w-full">
                         <span class="text-gray-500">Channel</span>
                         <span class="ml-auto text-white"
                             name="videoChannel">{{ $video['snippet']['channelTitle'] }}</span>
                     </div>
-                    <div class="flex border-t border-ungu-font py-2 w-full">
+                    <div class="flex border-t  py-2 w-full">
                         <span class="text-gray-500">Published at: </span>
                         <span class="ml-auto text-white"
                             name="">{{ date('D, d M y', strtotime($video['snippet']['publishedAt'])) }}</span>
                     </div>
-                    <div class="flex border-t border-ungu-font py-2 w-full">
+                    <div class="flex border-t  py-2 w-full">
                         <span class="text-gray-500 mb-3">Description: </span>
                         <span onclick="alert(`{{ $video['snippet']['description'] }}`)"
                             class="cursor-pointer text-white bg-ungu-font border-0 py-1 px-3 focus:outline-none hover:bg-indigo-200 rounded text-base ml-auto md:mt-0">Lihat
@@ -38,7 +38,7 @@
                                 id="{{ 'button-check-' . $video['id'] }}" class="peer hidden" />
                             <label for="{{ 'button-check-' . $video['id'] }}"
                                 class="flex items-center select-none cursor-pointer rounded-lg border-0
-                           py-2 px-3 font-bold text-gray-400 transition-colors duration-200 ease-in-out  peer-checked:text-red-500 peer-checked:border-ungu-font ">
+                           py-2 px-3 font-bold text-gray-400 transition-colors duration-200 ease-in-out  peer-checked:text-red-500 peer-checked: ">
                                 <i class="material-icons text-sm mr-2">thumb_up</i> Like </label>
                         </div>
 

@@ -12,14 +12,15 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                default: ['Poppins', 'sans-serif'],
+                subhero: ['Oooh Baby', 'cursive'],
             },
             colors: {
                 meta: "#0F172A",
                 "grey-pudar": "#3D3D3D",
                 "biru-tosca": "#38BDF8",
                 "ungu-font": "#452090",
-                pink: "#FF00F1",
+                "pink": "#ec4899",
                 "ungu-gradient": "#873091",
                 "biru-gradient": "#04509B",
             },

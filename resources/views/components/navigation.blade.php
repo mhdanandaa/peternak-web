@@ -1,12 +1,12 @@
-<nav x-data="{ open: false }" class="bg-meta">
+<nav x-data="{ open: false }" class="backdrop-filter backdrop-blur-lg sticky top-0">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse backdrop-filter backdrop-blur-lg">
                     <img src="{{ asset("assets/nav-icon.svg")}}" class="h-8"/>
-                    <span class="self-center font-semibold whitespace-nowrap text-ungu-font">Peternak <span class="text-biru-tosca">Web |</span></span>
+                    <span class="self-center font-semibold whitespace-nowrap text-white">Peternak <span class="text-pink">Web |</span></span>
                 </a>
                 {{-- <div class="shrink-0 flex items-center">
                     @auth
