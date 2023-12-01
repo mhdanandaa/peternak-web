@@ -1,6 +1,6 @@
 <x-my-app-layout>
     <x-navigation></x-navigation>
-    <section class=" m-2">
+    <section class=" m-2 mb-20">
         <div class="flex flex-wrap w-full h-max">
             <div class="w-full lg:w-8/12 p-2">
                 <div>
@@ -155,4 +155,6 @@
             return null;
         }
     </script>
+        @include('welcome.footer-section')
+
 </x-my-app-layout>

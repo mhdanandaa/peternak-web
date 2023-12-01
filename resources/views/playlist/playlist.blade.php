@@ -1,6 +1,6 @@
 <x-my-app-layout>
     <x-navigation></x-navigation>
-    <section>
+    <section class="mb-20">
         @foreach ($videos as $video)
         {{-- @dump($video) --}}
             <div class="container mx-auto flex px-2 py-5 md:flex-row flex-col items-center bg-meta">
@@ -13,17 +13,17 @@
                     <h1 class="title-font  text-3xl mb-4 font-medium text-white" name="videoTitle">
                         {{ $video['snippet']['title'] }}
                     </h1>
-                    <div class="flex border-t  py-2 w-full">
+                    <div class="flex border-t  border-purple-400 py-2 w-full">
                         <span class="text-gray-500">Channel</span>
                         <span class="ml-auto text-white"
                             name="videoChannel">{{ $video['snippet']['channelTitle'] }}</span>
                     </div>
-                    <div class="flex border-t  py-2 w-full">
+                    <div class="flex border-t border-purple-400 py-2 w-full">
                         <span class="text-gray-500">Published at: </span>
                         <span class="ml-auto text-white"
                             name="">{{ date('D, d M y', strtotime($video['snippet']['publishedAt'])) }}</span>
                     </div>
-                    <div class="flex border-t  py-2 w-full">
+                    <div class="flex border-t border-purple-400 py-2 w-full">
                         <span class="text-gray-500 mb-3">Description: </span>
                         <span onclick="alert(`{{ $video['snippet']['description'] }}`)"
                             class="cursor-pointer text-white bg-ungu-font border-0 py-1 px-3 focus:outline-none hover:bg-indigo-200 rounded text-base ml-auto md:mt-0">Lihat
@@ -90,4 +90,6 @@
             return null;
         }
     </script>
+        @include('welcome.footer-section')
+
 </x-my-app-layout>

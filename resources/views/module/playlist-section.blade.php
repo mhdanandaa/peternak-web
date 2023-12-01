@@ -1,5 +1,5 @@
 @if (isset($playlist) && count($playlist) !== 0)
-    <section class=" bg-meta min-h-full">
+    <section class=" bg-meta min-h-full mb-20">
         <div class="px-10 py-5">
             <div class="text-2xl text-white font-medium mb-3">Playlist Unggulan kami</div>
         </div>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="flex border-t border-gray-200 py-2 w-full">
                                 <span class="text-white">Published At : </span>
-                                <span class="ml-auto text-gray-900"
+                                <span class="ml-auto text-purple-400"
                                     name="">{{ date('D, d M y', strtotime($playlistItem['snippet']['publishedAt'])) }}</span>
                             </div>
                             <div class="flex border-t border-gray-200 py-2 w-full text-sm">
@@ -59,7 +59,7 @@
                             </div>
                             <div class="flex border-t border-gray-200 py-2 w-full">
                                 <span class="text-white">Published At : </span>
-                                <span class="ml-auto text-gray-900"
+                                <span class="ml-auto text-purple-400"
                                     name="">{{ date('D, d M y', strtotime($playlistItem['snippet']['publishedAt'])) }}</span>
                             </div>
                             <div class="flex border-t border-gray-200 py-2 w-full text-sm">
@@ -92,3 +92,5 @@
 
     </section>
 @endif
+@include('welcome.footer-section')
+

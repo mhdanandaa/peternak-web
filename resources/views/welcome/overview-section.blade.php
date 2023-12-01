@@ -4,7 +4,7 @@
   <div class="circlePosition w-[300px] h-[250px] bg-biru-gradient rounded-[100%] absolute top-[100%] left-[90%] translate-x-[-50%] traslate-y-[-50%] blur-[100px]"></div>
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font lg:text-5xl text-3xl mb-4 font-bold text-pink">PETERNAK<span class= "text-white border-b-2 border-pink">WEB</span> 
+      <h1 class="title-font lg:text-5xl text-3xl mb-4 font-bold text-purple-400">PETERNAK<span class= "text-white border-b-2 border-purple-400">WEB</span> 
       </h1>
       <p class="mb-8 leading-relaxed text-purple-200 backdrop-blur-sm">Menyediakan video pembelajaran mengenai Pemograman Website. Topik dan alur video yang disediakan telah ditentukan Langkah demi langkah, sehingga sangat mudah untuk diikuti.</p>
     </div>
@@ -18,7 +18,7 @@
         <img class="object-cover object-center rounded backdrop-blur-sm	" alt="hero" src="{{ asset("assets/pendahuluan.svg")}}">
       </div>
       <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="title-font lg:text-4xl text-4xl font-bold mb-4 text-white p-2 border-b-2 border-pink text-border-white text-border-size-2 backdrop-blur-sm uppercase">Pendahuluan
+        <h1 class="title-font lg:text-4xl text-4xl font-bold mb-4 text-white p-2 border-b-2 border-purple-400 text-border-white text-border-size-2 backdrop-blur-sm uppercase">Pendahuluan
         </h1>
         <p class="mb-8 leading-relaxed text-white backdrop-blur-sm">Temukan perbedaan mengenai Front-end Web Developer dan Back-end Web Developer di pendahuluan .</p>
         <div class="flex justify-center">
