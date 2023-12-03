@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\ModuleController;
-use App\Http\Controllers\NoteController;
-use App\Http\Controllers\PlaylistController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NoteController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\VideoController;
+use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PlaylistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/video/{playlist_id}/{video_id}', [VideoController::class,'videoPage'])->name('videoPage');
     Route::delete('/playlist/{id}', [PlaylistController::class,'deletePlaylist'])->name('deletePlaylist');
     Route::post('/note/{video_id}', [NoteController::class,'updateNote'])->name('updateNote');
+
+    Route::get('/user', [UserController::class, 'index'])->name('user');
+    Route::post('/userStore', [UserController::class, 'store'])->name('userStore');
+    Route::get('/userView', [UserController::class, 'show'])->name('userView');
 });
 
 require __DIR__.'/auth.php';

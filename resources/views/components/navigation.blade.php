@@ -1,10 +1,10 @@
-<nav x-data="{ open: false }" class="backdrop-filter backdrop-blur-lg sticky top-0  left-0 z-10 w-full bg-transparent">
+<nav x-data="{ open: false }" class="backdrop-filter backdrop-blur-lg sticky top-0 bg-meta left-0 z-10 w-full bg-transparent">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse backdrop-filter backdrop-blur-lg">
+                <a href="/dashboard" class="flex items-center space-x-3 rtl:space-x-reverse backdrop-filter backdrop-blur-lg">
                     <img src="{{ asset("assets/nav-icon.svg")}}" class="h-8"/>
                     <span class="self-center font-semibold whitespace-nowrap text-white">Peternak <span class="text-pink">Web |</span></span>
                 </a>

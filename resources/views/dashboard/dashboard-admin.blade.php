@@ -23,6 +23,11 @@
                         class="flex  justify-center bg-white rounded-full shadow py-4">Module Settings</a> </li>
             </ul>
         </div>
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+            <x-nav-link :href="route('user')" :active="request()->routeIs('user')">
+                {{ __('Daftar Pengguna') }}
+            </x-nav-link>
+        </div>
     </div>
     <section id="moduleTab" name='tab'class="text-gray-600 body-font block bg-white">
         <div class="container px-5 py-5 mx-auto">
@@ -67,7 +72,7 @@
                                         Deskripsi</span>
                                 </div>
                                 <div class="flex justify-between mt-3">
-                                    <a href='{{ route('dashboard', ['module' =>  (last($moduleNames) == 'primary' ? '' : join('/',$moduleNames).'/').$children[$i]->name]) }}'
+                                    <a href='{{ route('dashboard', ['module' => (last($moduleNames) == 'primary' ? '' : join('/', $moduleNames) . '/') . $children[$i]->name]) }}'
                                         class=" text-indigo-500 inline-flex items-center">Learn More
                                         <i class="material-icons ml-1">arrow_forward</i>
                                     </a>
