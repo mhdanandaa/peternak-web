@@ -25,17 +25,25 @@ Route::get('/module/{module?}',[ModuleController::class,'modulePage'])->where('m
 
 
 Route::middleware('auth')->group(function () {
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::post('/profile', [ProfileController::class, 'store'])->name('user.profile.store');
+
+
+
     Route::get('/dashboard/{module?}', [ModuleController::class,'dashboardPage'])->where('module', '.*')->name('dashboard');
+
     Route::post('/module', [ModuleController::class,'addModule'])->name('addModule');
     Route::put('/module', [ModuleController::class,'updateModule'])->name('updateModule');
     Route::delete('/module', [ModuleController::class,'deleteModule'])->name('deleteModule');
+
     Route::post('/playlist', [PlaylistController::class,'addPlaylist'])->name('addPlaylist');
     Route::get('/playlist/{id}', [PlaylistController::class,'playlistPage'])->name('playlistPage');
     Route::get('/video/{playlist_id}/{video_id}', [VideoController::class,'videoPage'])->name('videoPage');
     Route::delete('/playlist/{id}', [PlaylistController::class,'deletePlaylist'])->name('deletePlaylist');
+
     Route::post('/note/{video_id}', [NoteController::class,'updateNote'])->name('updateNote');
 
     Route::get('/user', [UserController::class, 'index'])->name('user');

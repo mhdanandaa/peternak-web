@@ -23,6 +23,7 @@ export default {
                 "pink": "#ec4899",
                 "ungu-gradient": "#873091",
                 "biru-gradient": "#04509B",
+                "biru-ungu" : "#6366F1"
             },
         },
         backgroundColor: (theme) => ({

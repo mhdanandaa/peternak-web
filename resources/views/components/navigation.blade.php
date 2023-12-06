@@ -35,7 +35,8 @@
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
-                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-ungu-font hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                            <img src="/avatars/{{ Auth::user()->avatar }}" class="w-12 h-12 border-2 border-slate-100 rounded-full mr-2">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ml-1">
@@ -68,7 +69,7 @@
                 <div class="flex justify-center items-center">
                     <a href="/login" class="m-1 inline-flex items-center bg-ungu-font text-white py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign In
                     </a>
-                    <a href="/register" class="m-1 inline-flex items-center bg-meta text-ungu-font border-2 border-ungu-font py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign Up
+                    <a href="/register" class="m-1 inline-flex items-center bg-white text-ungu-font py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign Up
                     </a>
                 </div>
             @endauth

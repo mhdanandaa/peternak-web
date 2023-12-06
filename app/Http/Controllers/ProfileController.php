@@ -14,6 +14,7 @@ class ProfileController extends Controller
     /**
      * Display the user's profile form.
      */
+    
     public function edit(Request $request): View
     {
         return view('profile.edit', [
@@ -56,5 +57,18 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
+    }
+    public function store(Request $request)
+    {
+        $request->validate([
+            'avatar' => 'required|image',
+        ]);
+  
+        $avatarName = time().'.'.$request->avatar->getClientOriginalExtension();
+        $request->avatar->move(public_path('avatars'), $avatarName);
+  
+        Auth()->user()->update(['avatar'=>$avatarName]);
+  
+        return back()->with('success', 'Avatar updated successfully.');
     }
 }
