@@ -99,6 +99,7 @@
             @auth
                 
             <div class="px-4">
+                <img src="/avatars/{{ Auth::user()->avatar }}" class="w-12 h-12 border-2 border-slate-100 rounded-full mr-2">
                 <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
                 <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
             </div>
