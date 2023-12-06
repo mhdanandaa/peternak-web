@@ -1,7 +1,7 @@
 <!-- Overview Section -->
 <section id="overview" class="text-gray-600 body-font ml-10 mr-10">
-  <div class="circlePosition w-[500px] h-[550px] bg-ungu-font rounded-[100%] absolute top-[150%] left-[10%] translate-x-[-50%] traslate-y-[-50%] blur-[100px]"></div>
-  <div class="circlePosition w-[300px] h-[250px] bg-biru-gradient rounded-[100%] absolute top-[100%] translate-x-[-50%] traslate-y-[-50%] blur-[100px]"></div>
+  <div class="circlePosition md:w-[1800px] w-[500px] h-[300px] bg-ungu-font rounded-[100%] absolute top-[115%] left-[40%] translate-x-[-50%] traslate-y-[-50%] blur-[100px]"></div>
+  <div class="circlePosition w-[500px] h-[550px] bg-biru-gradient rounded-[100%] absolute top-[150%] left-[10%] translate-x-[-50%] traslate-y-[-50%] blur-[100px]"></div>
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
       <h1 class="title-font lg:text-5xl text-3xl mb-4 font-bold text-purple-400">PETERNAK<span class= "text-white border-b-2 border-purple-400">WEB</span> 

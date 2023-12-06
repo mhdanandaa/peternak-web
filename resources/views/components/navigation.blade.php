@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <a href="/dashboard" class="flex items-center space-x-3 rtl:space-x-reverse backdrop-filter backdrop-blur-lg">
-                    <img src="{{ asset("assets/nav-icon.svg")}}" class="h-8"/>
+                    <img src="{{ asset("assets/nav-icon.svg")}}" class="w-9 h-9"/>
                     <span class="self-center font-semibold whitespace-nowrap text-white">Peternak <span class="text-pink">Web |</span></span>
                 </a>
                 {{-- <div class="shrink-0 flex items-center">
@@ -36,7 +36,7 @@
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
-                            <img src="/avatars/{{ Auth::user()->avatar }}" class="w-12 h-12 border-2 border-slate-100 rounded-full mr-2">
+                            <img src="/avatars/{{ Auth::user()->avatar }}" class="w-9 h-9 border-2 border-slate-100 rounded-full mr-2">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ml-1">
@@ -99,7 +99,7 @@
             @auth
                 
             <div class="px-4">
-                <img src="/avatars/{{ Auth::user()->avatar }}" class="w-12 h-12 border-2 border-slate-100 rounded-full mr-2">
+                <img src="/avatars/{{ Auth::user()->avatar }}" class="w-9 h-9 border-2 border-slate-100 rounded-full mr-2">
                 <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
                 <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
             </div>
