@@ -19,7 +19,7 @@
                     </a>
                     @endauth
                 </div> --}}
-                
+
                 @auth
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex ">
@@ -28,6 +28,9 @@
                     </x-nav-link>
                     <x-nav-link class="text-white" :href="route('module')" :active="request()->routeIs('module')">
                         {{ __('Overview') }}
+                    </x-nav-link>
+                    <x-nav-link class="text-white" :href="route('team')" :active="request()->routeIs('team')">
+                        {{ __('About Us') }}
                     </x-nav-link>
                 </div>
                 @endauth
@@ -98,6 +101,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('module')" :active="request()->routeIs('module')">
                 {{ __('Overview') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('team')" :active="request()->routeIs('team')">
+                {{ __('About Us') }}
             </x-responsive-nav-link>
 
         </div>
