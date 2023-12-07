@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NoteController;
+use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\ModuleController;
@@ -34,6 +35,7 @@ Route::middleware('auth')->group(function () {
 
 
     Route::get('/dashboard/{module?}', [ModuleController::class,'dashboardPage'])->where('module', '.*')->name('dashboard');
+    Route::get('/module', [ModuleController::class,'modulePage'])->where('module', '.*')->name('module');
 
     Route::post('/module', [ModuleController::class,'addModule'])->name('addModule');
     Route::put('/module', [ModuleController::class,'updateModule'])->name('updateModule');
@@ -49,6 +51,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/user', [UserController::class, 'index'])->name('user');
     Route::post('/userStore', [UserController::class, 'store'])->name('userStore');
     Route::get('/userView', [UserController::class, 'show'])->name('userView');
+
+    Route::get('/team', [TeamController::class, 'index'])->name('team');
+
 });
 
 require __DIR__.'/auth.php';

@@ -19,11 +19,15 @@
                     </a>
                     @endauth
                 </div> --}}
+                
                 @auth
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex ">
                     <x-nav-link class="text-white" :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+                    <x-nav-link class="text-white" :href="route('module')" :active="request()->routeIs('module')">
+                        {{ __('Overview') }}
                     </x-nav-link>
                 </div>
                 @endauth
@@ -92,6 +96,10 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('module')" :active="request()->routeIs('module')">
+                {{ __('Overview') }}
+            </x-responsive-nav-link>
+
         </div>
 
         <!-- Responsive Settings Options -->
