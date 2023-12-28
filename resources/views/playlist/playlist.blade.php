@@ -26,12 +26,12 @@
                     <div class="flex border-t border-purple-400 py-2 w-full">
                         <span class="text-gray-500 mb-3">Description: </span>
                         <span onclick="alert(`{{ $video['snippet']['description'] }}`)"
-                            class="cursor-pointer text-white bg-ungu-font border-0 py-1 px-3 focus:outline-none hover:bg-indigo-200 rounded text-base ml-auto md:mt-0">Lihat
+                            class="cursor-pointer text-white bg-ungu-font border-0 py-1 px-3 focus:outline-none hover:bg-ungu-void rounded text-base ml-auto md:mt-0">Lihat
                             Deskripsi</span>
                     </div>
                     <div class="w-full flex">
                         <a href="{{ route('videoPage', ['playlist_id'=>$video['snippet']['playlistId'],'video_id' => $video['contentDetails']['videoId']]) }}"
-                            class="inline-flex text-white bg-ungu-font border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-sm">Lihat
+                            class="inline-flex text-white bg-ungu-font border-0 py-2 px-6 focus:outline-none hover:bg-ungu-void rounded text-sm">Lihat
                             detail</a>
                         <div class="flex">
                             <input type="checkbox" onchange="toggleLike('{{ $video['id'] }}')"

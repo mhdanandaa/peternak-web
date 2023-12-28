@@ -5,8 +5,8 @@
             <div>
                 <div class="w-full px-4">
                     <div class="mx-auto mb-8 text-center">
-                        <h4 class="px-2 mx-auto my-4 text-lg font-medium text-center text-white capitalize rounded-lg bg-ungu-font bg-opacity-20 lg:w-1/5">Our Team Developers</h4>
-                        <h2 class="mb-4 text-3xl font-bold text-biru-ungu sm:text-4xl lg:text-2xl">Kelompok 7
+                        <h4 class="px-2 mx-auto my-4 text-lg font-medium text-center text-white capitalize rounded-lg bg-ungu-font bg-opacity-20 lg:w-1/5">Meet our Team</h4>
+                        <h2 class="mb-4 text-3xl font-bold text-ungu-void sm:text-4xl lg:text-2xl">Kelompok 7
                         </h2>
                         <p class="font-medium text-center text-medium text-stone-200 md:text-lg">Telkom University
                         </p>
@@ -28,7 +28,7 @@
               <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset("assets/team_1.svg")}}">
             </div>
             <h2 class="text-xl font-medium title-font text-white mt-5">Mhd. Ananda Ridho Alfadillah</h2>
-            <p class="text-base leading-relaxed mt-2 text-biru-ungu">Mahasiswa jurusan D3 Rekayasa Perangkat Lunak Aplikasi</p>
+            <p class="text-base leading-relaxed mt-2 text-white">Mahasiswa jurusan D3 Rekayasa Perangkat Lunak Aplikasi</p>
           </div>
 
           <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -36,7 +36,7 @@
               <img alt="content" class="object-cover object-center" src="{{ asset("assets/team_2.svg")}}">
             </div>
             <h2 class="text-xl font-medium title-font text-white mt-5">Alfonsus Liguori Dango</h2>
-            <p class="text-base leading-relaxed mt-2 text-biru-ungu">Mahasiswa jurusan D3 Rekayasa Perangkat Lunak Aplikasi</p>
+            <p class="text-base leading-relaxed mt-2 text-white">Mahasiswa jurusan D3 Rekayasa Perangkat Lunak Aplikasi</p>
           </div>
 
           <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -44,7 +44,7 @@
               <img alt="content" class="object-cover object-center" src="{{ asset("assets/team_3.svg")}}">
             </div>
             <h2 class="text-xl font-medium title-font text-white mt-5">Muhammad Najib Robbani</h2>
-            <p class="text-base leading-relaxed mt-2 text-biru-ungu">Mahasiswa jurusan D3 Rekayasa Perangkat Lunak Aplikasi</p>
+            <p class="text-base leading-relaxed mt-2 text-white">Mahasiswa jurusan D3 Rekayasa Perangkat Lunak Aplikasi</p>
           </div>
 
 

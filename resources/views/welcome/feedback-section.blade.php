@@ -6,20 +6,20 @@
         <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
           <div class="lg:w-1/2 px-6">
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-            <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+            <p class="mt-1">Jl. Telekomunikasi. 1, Telkom University, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257 (022) 7564108</p>
           </div>
           <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-            <a class="text-indigo-500 leading-relaxed">example@email.com</a>
-            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-            <p class="leading-relaxed">123-456-7890</p>
+            <a class="text-ungu-void leading-relaxed">peternakweb@email.com</a>
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">INSTAGRAM</h2>
+            <p class="leading-relaxed text-ungu-void">@peternakweb</p>
           </div>
         </div>
       </div>
       <div class="lg:w-1/3 md:w-1/2  flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
 
         <form action="https://formspree.io/f/xbjeegre" method="POST">
-        <h2 class= "text-purple-400 text-lg mb-1 font-bold	 title-font">Kritik dan Pesan</h2>
+        <h2 class= "text-ungu-void text-2xl	 mb-1 font-bold	 title-font">KRITIK & PESAN</h2>
         <p class="leading-relaxed mb-5 text-white">Saran dan kritik dari anda akan sangat membantu kami untuk lebih baik
 
         </p>
@@ -36,7 +36,7 @@
           <textarea id="message" name="message" class="w-full  bg-meta-pudar rounded border-b-4 border-white hover:border-ungu-font h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
         </div>
         <button class="text-white w-full bg-meta-pudar border-4 border-ungu-font py-2 px-6 focus:outline-none rounded text-lg">Submit</button>
-        <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+        <p class="text-xs text-gray-500 mt-3">Kritik dan pesan kamu akan sangat berarti bagi kami.</p>
         </form>
       </div>
     </div>

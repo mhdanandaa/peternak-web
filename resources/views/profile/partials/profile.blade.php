@@ -21,7 +21,7 @@
                             <div class="col-md-6">
                                 <input id="avatar" type="file" class="form-control @error('avatar') is-invalid @enderror" name="avatar" value="{{ old('avatar') }}" required autocomplete="avatar">
   
-                                <img src="/avatars/{{ Auth::user()->avatar }}" style="width:80px;margin-top: 10px;" class="rounded-full border-2 border-ungu-font">
+                                <img src="/avatars/{{ Auth::user()->avatar }}" class="rounded-full w-16 h-16 mt-3 border-2 border-ungu-font">
   
                                 @error('avatar')
                                     <span class="invalid-feedback" role="alert">

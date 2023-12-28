@@ -32,20 +32,20 @@
                             <div>
 
                                 <span onclick="alert(`{{ $video['snippet']['description'] }}`)"
-                                    class="cursor-pointer bg-indigo-100 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-200 rounded text-base ml-auto md:mt-0">
+                                    class="cursor-pointer bg-ungu-font border-0 py-1 px-3 focus:outline-none hover:bg-ungu-void text-white rounded text-base ml-auto md:mt-0">
                                     Deskripsi</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mt-2 bg-gray-100 w-full p-2 rounded-lg">
-                    <span class="text-gray-300">Catatan</span>
+                <div class="mt-2 bg-meta-pudar w-full p-2 rounded-lg">
+                    <span class="text-white">Catatan</span>
                     <div class="flex flex-col">
                         <input type="text" id="noteTitle"
-                            class="border-transparent bg-transparent border-x-0 border-t-0 focus:ring-0 border-b-2  text-xl p-0"
+                            class="border-transparent bg-transparent border-x-0 border-t-0 focus:ring-0 bg-meta border-b-4 border-ungu-font text-xl p-0"
                             placeholder="Title" value="{{ $note['title'] ?? '' }}">
                         <textarea id="noteDescription"
-                            class="border-transparent bg-transparent border-x-0 border-t-0 focus:ring-0 border-b-2  p-0"
+                            class="border-transparent bg-transparent border-x-0 border-t-0 focus:ring-0 bg-meta border-b-4 border-ungu-font  p-0"
                             placeholder="Write a note" rows="3">{{ $note['description'] ?? '' }}</textarea>
                         <div class="mt-2">
 

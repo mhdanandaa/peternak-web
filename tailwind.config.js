@@ -23,7 +23,8 @@ export default {
                 "pink": "#ec4899",
                 "ungu-gradient": "#873091",
                 "biru-gradient": "#04509B",
-                "biru-ungu" : "#6366F1"
+                "biru-ungu" : "#6366F1",
+                "ungu-void" : "#6B26D8"
             },
         },
         backgroundColor: (theme) => ({
@@ -34,7 +35,8 @@ export default {
             "ungu-font": "#452090",
             "ungu-gradient": "#873091",
             "biru-gradient": "#04509B",
-            "meta-pudar" : "#1A2132"
+            "meta-pudar" : "#1A2132",
+            "biru-ungu" : "#E8F0FE"
         }),
 
         backgroundImage: {
@@ -43,4 +45,7 @@ export default {
     },
 
     plugins: [require("tailwind-scrollbar")],
+    plugins: [
+        require('tailwindcss-animated')
+      ],
 };

@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <a href="/dashboard" class="flex items-center space-x-3 rtl:space-x-reverse backdrop-filter backdrop-blur-lg">
                     <img src="{{ asset("assets/nav-icon.svg")}}" class="w-9 h-9"/>
-                    <span class="self-center font-semibold whitespace-nowrap text-white">Peternak <span class="text-pink">Web |</span></span>
+                    <span class="self-center font-semibold whitespace-nowrap text-white">Peternak <span class="text-ungu-void">Web |</span></span>
                 </a>
                 {{-- <div class="shrink-0 flex items-center">
                     @auth
@@ -74,7 +74,7 @@
             </div>                
             @else
                 <div class="flex justify-center items-center">
-                    <a href="/login" class="m-1 inline-flex items-center bg-ungu-font text-white py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign In
+                    <a href="/login" class="m-1 inline-flex items-center bg-ungu-font text-white py-1 px-3 focus:outline-none hover:bg-ungu-void rounded text-base mt-4 md:mt-0">Sign In
                     </a>
                     <a href="/register" class="m-1 inline-flex items-center bg-white text-ungu-font py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign Up
                     </a>

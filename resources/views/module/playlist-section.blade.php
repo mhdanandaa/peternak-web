@@ -20,7 +20,7 @@
                             <div class="flex text-sm  border-t border-gray-200 py-2 w-full">
                                 <span class="text-white mb-3">Description: </span>
                                 <span onclick="alert(`{{ $playlistItem['snippet']['description'] }}`)"
-                                    class="cursor-pointer bg-ungu-font text-white border-0 py-1 px-3 focus:outline-none hover:bg-indigo-200 rounded ml-auto md:mt-0">Lihat
+                                    class="cursor-pointer bg-ungu-font text-white border-0 py-1 px-3 focus:outline-none hover:bg-ungu-void rounded ml-auto md:mt-0">Lihat
                                     Deskripsi</span>
                             </div>
                             <div class="flex border-t border-gray-200 py-2 w-full">
@@ -31,10 +31,10 @@
                             <div class="flex border-t border-gray-200 py-2 w-full text-sm">
                                 <a target="__blank"
                                     href="https://www.youtube.com/playlist?list={{ $playlistItem['id'] }}"
-                                    class="cursor-pointer bg-ungu-font text-white border-0 py-1 px-3 focus:outline-none hover:bg-indigo-200 rounded mr-auto md:mt-0">Lihat
+                                    class="cursor-pointer bg-ungu-font text-white border-0 py-1 px-3 focus:outline-none hover:bg-ungu-void rounded mr-auto md:mt-0">Lihat
                                     Di Youtube</a>
                                 <a href="{{ route('playlistPage', ['id' => $playlistItem['id']]) }}"
-                                    class="cursor-pointer bg-ungu-font text-white border-0 py-1 px-3 focus:outline-none hover:bg-indigo-200 rounded ml-auto md:mt-0">Lihat
+                                    class="cursor-pointer bg-ungu-font text-white border-0 py-1 px-3 focus:outline-none hover:bg-ungu-void rounded ml-auto md:mt-0">Lihat
                                     Detail</a>
                             </div>
                         </div>
