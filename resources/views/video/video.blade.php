@@ -3,22 +3,22 @@
     <section class=" m-2 mb-20">
         <div class="flex flex-wrap w-full h-max">
             <div class="w-full lg:w-8/12 p-2">
-                <div>
+                <div data-aos="fade-right">
                     <iframe src="https://www.youtube.com/embed/{{ $video['contentDetails']['videoId'] }}"
                         title="YouTube video player" class="w-full aspect-video rounded-lg" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
                 <div class="mt-2  w-full p-2 rounded-lg">
-                    <span class="font-bold text-3xl ">{{ $video['snippet']['title'] }}</span>
+                    <span class="font-semibold text-3xl text-white ">{{ $video['snippet']['title'] }}</span>
                     <hr class="my-2">
                     <div class="flex justify-between w-full">
                         <div class=" flex flex-col">
-                            <span class="font-bold  text-sm ">{{ $video['snippet']['channelTitle'] }}</span>
+                            <span class="font-bold  text-sm text-ungu-void">{{ $video['snippet']['channelTitle'] }}</span>
                             <span
-                                class="text-sm">{{ date('D, d M y', strtotime($video['snippet']['publishedAt'])) }}</span>
+                                class="text-sm text-ungu-void">{{ date('D, d M y', strtotime($video['snippet']['publishedAt'])) }}</span>
                         </div>
-                        <div class="flex flex-row items-center">
+                        <div class="flex flex-row items-center" >
                             <div class="flex">
                                 <input type="checkbox"
                                     onchange="toggleLike('{{ $video['contentDetails']['videoId'] }}')"
@@ -57,14 +57,14 @@
                 </div>
             </div>
             <!-- ... -->
-            <div class="w-full lg:w-1/3 py-1">
+            <div class="w-full lg:w-1/3 py-1" >
                 <div class=" rounded-lg h-full lg:bg-meta text-white  py-2">
                     <div class="mb-1">
-                        <span class="text-2xl lg:text-base p-2">Playlist Item</span>
+                        <span class="text-2xl lg:text-base p-2" data-aos="fade-right">Playlist Item</span>
                     </div>
                     @foreach ($videosPlaylist as $videoPlaylist)
                         <div onclick="window.location = '{{ route('videoPage', ['playlist_id' => $videoPlaylist['snippet']['playlistId'], 'video_id' => $videoPlaylist['contentDetails']['videoId']]) }}'"
-                            class="flex flex-wrap w-full py-2 hover:bg-gray-300 hover:text-ungu-font cursor-pointer">
+                            class="flex flex-wrap w-full py-2 hover:bg-gray-300 hover:text-ungu-font cursor-pointer" data-aos="fade-down">
                             <div class="flex lg:w-5/12 w-full px-1 ">
 
                                 <div class="lg:max-w-lg  mb-2 md:mb-0  aspect-[16/9]">

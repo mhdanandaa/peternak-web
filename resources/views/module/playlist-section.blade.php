@@ -1,14 +1,14 @@
 @if (isset($playlist) && count($playlist) !== 0)
     <section class=" bg-meta min-h-full mb-20">
         <div class="px-10 py-5">
-            <div class="text-2xl text-white font-medium mb-3">Playlist Unggulan kami</div>
+            <div class="text-2xl text-white font-medium mb-3" data-aos="fade-down">Playlist Unggulan kami</div>
         </div>
         <div class="flex justify-center">
 
 
             @foreach ($playlist as $playlistItem)
                 @if (Auth::check())
-                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
                         <div class="bg-meta border-2 border-ungu-font p-6 rounded-lg text-sm">
                             <img class="aspect-video rounded w-full object-cover object-center mb-6"
                                 src="{{ $playlistItem['snippet']['thumbnails']['high']['url'] }}" alt="content">
@@ -42,7 +42,7 @@
                 @endif
 
                 @if (Auth::guest())
-                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
                         <div class="bg-meta border-2 border-ungu-font p-6 rounded-lg text-sm">
                             <img class="aspect-video rounded w-full object-cover object-center mb-6"
                                 src="{{ $playlistItem['snippet']['thumbnails']['high']['url'] }}" alt="content">
@@ -77,7 +77,7 @@
             @endforeach
         </div>
         @if (Auth::guest())
-            <div class="flex justify-center mt-10">
+            <div class="flex justify-center mt-10" data-aos="fade-down">
 
                 <div class="bg-white border-2 border-ungu-font p-6 rounded-lg text-sm h-48 w-3/4 text-center mb-8">
                     <h1 class="font-medium text-3xl text-grey-pudar">Tunggu apa lagi?</h1>

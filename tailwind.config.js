@@ -12,19 +12,19 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                default: ['Poppins', 'sans-serif'],
-                subhero: ['Oooh Baby', 'cursive'],
+                default: ["Poppins", "sans-serif"],
+                subhero: ["Oooh Baby", "cursive"],
             },
             colors: {
                 meta: "#0F172A",
                 "grey-pudar": "#3D3D3D",
                 "biru-tosca": "#38BDF8",
                 "ungu-font": "#452090",
-                "pink": "#ec4899",
+                pink: "#ec4899",
                 "ungu-gradient": "#873091",
                 "biru-gradient": "#04509B",
-                "biru-ungu" : "#6366F1",
-                "ungu-void" : "#6B26D8"
+                "biru-ungu": "#6366F1",
+                "ungu-void": "#6B26D8",
             },
         },
         backgroundColor: (theme) => ({
@@ -35,8 +35,8 @@ export default {
             "ungu-font": "#452090",
             "ungu-gradient": "#873091",
             "biru-gradient": "#04509B",
-            "meta-pudar" : "#1A2132",
-            "biru-ungu" : "#E8F0FE"
+            "meta-pudar": "#1A2132",
+            "biru-ungu": "#E8F0FE",
         }),
 
         backgroundImage: {
@@ -45,7 +45,4 @@ export default {
     },
 
     plugins: [require("tailwind-scrollbar")],
-    plugins: [
-        require('tailwindcss-animated')
-      ],
 };

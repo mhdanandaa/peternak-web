@@ -4,7 +4,7 @@
         <section class="container mb-5 pt-10">
             <div>
                 <div class="w-full px-4">
-                    <div class="mx-auto mb-8 text-center">
+                    <div class="mx-auto mb-8 text-center" data-aos="fade-down">
                         <h4 class="px-2 mx-auto my-4 text-lg font-medium text-center text-white capitalize rounded-lg bg-ungu-font bg-opacity-20 lg:w-1/5">Meet our Team</h4>
                         <h2 class="mb-4 text-3xl font-bold text-ungu-void sm:text-4xl lg:text-2xl">Kelompok 7
                         </h2>
@@ -13,7 +13,7 @@
                         
                     </div>
                 </div>
-                <div class="self-center w-full px-4 mx-auto text-center lg:w-1/2">
+                <div class="self-center w-full px-4 mx-auto text-center lg:w-1/2" data-aos="fade-up">
                     <p class="font-medium text-center text-medium text-stone-600 md:text-lg">member
                     </p>
                     </div>
@@ -23,7 +23,7 @@
     <section class="text-gray-600 body-font backdrop-blur">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-right">
             <div class="rounded-lg h-100 w-50 overflow-hidden">
               <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset("assets/team_1.svg")}}">
             </div>
@@ -31,7 +31,7 @@
             <p class="text-base leading-relaxed mt-2 text-white">Mahasiswa jurusan D3 Rekayasa Perangkat Lunak Aplikasi</p>
           </div>
 
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-up">
             <div class="rounded-lg h-100 w-50  overflow-hidden">
               <img alt="content" class="object-cover object-center" src="{{ asset("assets/team_2.svg")}}">
             </div>
@@ -39,7 +39,7 @@
             <p class="text-base leading-relaxed mt-2 text-white">Mahasiswa jurusan D3 Rekayasa Perangkat Lunak Aplikasi</p>
           </div>
 
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-left">
             <div class="rounded-lg h-100 w-50  overflow-hidden">
               <img alt="content" class="object-cover object-center" src="{{ asset("assets/team_3.svg")}}">
             </div>
