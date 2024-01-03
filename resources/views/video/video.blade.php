@@ -29,6 +29,16 @@
                                     py-2 px-3 font-bold text-gray-400 transition-colors duration-200 ease-in-out  peer-checked:text-red-500 peer-checked:border-gray-200 ">
                                     <i class="material-icons text-sm mr-2">thumb_up</i> Like </label>
                             </div>
+                            <div class="flex">
+                                <input type="checkbox"
+                                    onchange="toggleLike('{{ $video['contentDetails']['videoId'] }}')"
+                                    id="{{ 'button-save-' . $video['contentDetails']['videoId'] }}"
+                                    class="peer hidden" />
+                                <label for="{{ 'button-save-' . $video['contentDetails']['videoId'] }}"
+                                    class="flex items-center select-none cursor-pointer rounded-lg border-0
+                                    py-2 px-3 font-bold text-gray-400 transition-colors duration-200 ease-in-out  peer-checked:text-blue-500 peer-checked:border-gray-200 ">
+                                    <i class="material-icons text-sm mr-2">bookmark</i> Save </label>
+                            </div>
                             <div>
 
                                 <span onclick="alert(`{{ $video['snippet']['description'] }}`)"
@@ -115,12 +125,21 @@
         }
 
         activateLike()
-
+        activateSave()
         function activateLike() {
             let cookies = JSON.parse(getCookie('videoLikes')) || {}
             Object.keys(cookies).forEach(function(key, index) {
                 if (document.getElementById('button-check-' + key) != undefined) {
-                    document.getElementById('button-check-' + key).checked = cookies[key]
+                    document.getElementById('button-check-' + key).checked = true
+                }
+            });
+
+        }
+        function activateSave() {
+            let cookies = JSON.parse(getCookie('videoSaved')) || {}
+            Object.keys(cookies).forEach(function(key, index) {
+                if (document.getElementById('button-save-' + key) != undefined) {
+                    document.getElementById('button-save-' + key).checked = true
                 }
             });
 
@@ -128,10 +147,33 @@
 
         function toggleLike(id) {
             let cookies = JSON.parse(getCookie('videoLikes')) || {}
-            cookies[id] = cookies[id] !== undefined ? !cookies[id] : true
+            if (cookies[id] !== undefined) {
+                delete cookies[id]
+            } else {
+                cookies[id] = '{{$playlistId}}'
+                // cookies[id] = {}
+                // cookies[id]['saved'] = true
+                // cookies[id]['image'] = document.getElementById('video-image-'+id).src
+                // cookies[id]['title'] = document.getElementById('video-title-'+id).innerHTML
+            }
 
 
             setCookie('videoLikes', JSON.stringify(cookies), 360)
+        }
+        function toggleSave(id) {
+            let cookies = JSON.parse(getCookie('videoSaved')) || {}
+            if (cookies[id] !== undefined) {
+                delete cookies[id]
+            } else {
+                cookies[id] = '{{$playlistId}}'
+                // cookies[id] = {}
+                // cookies[id]['saved'] = true
+                // cookies[id]['image'] = document.getElementById('video-image-'+id).src
+                // cookies[id]['title'] = document.getElementById('video-title-'+id).innerHTML
+            }
+
+
+            setCookie('videoSaved', JSON.stringify(cookies), 360)
         }
 
         function setCookie(name, value, days) {

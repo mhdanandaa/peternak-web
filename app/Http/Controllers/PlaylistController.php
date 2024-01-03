@@ -34,7 +34,7 @@ class PlaylistController extends Controller
     {
         $videos = Video::getVideosByPlaylistId($request->id);
         // echo $videos;
-        return view('playlist.playlist', ['videos' => $videos['items']]);
+        return view('playlist.playlist', ['videos' => $videos['items'],'playlistId'=>$request->id]);
     }
     public function deletePlaylist(Request $requwst)
     {

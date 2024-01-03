@@ -43,6 +43,7 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/playlist', [PlaylistController::class,'addPlaylist'])->name('addPlaylist');
     Route::get('/playlist/{id}', [PlaylistController::class,'playlistPage'])->name('playlistPage');
+    Route::get('/video/saved', [VideoController::class,'videoSavedPage'])->name('video.saved');
     Route::get('/video/{playlist_id}/{video_id}', [VideoController::class,'videoPage'])->name('videoPage');
     Route::delete('/playlist/{id}', [PlaylistController::class,'deletePlaylist'])->name('deletePlaylist');
 

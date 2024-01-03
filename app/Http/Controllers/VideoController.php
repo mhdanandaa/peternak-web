@@ -12,6 +12,9 @@ class VideoController extends Controller
     public function addLike(Request $request)
     {
     }
+    public function videoSavedPage(Request $request) {
+        return view('video.saved');
+    }
     public function videoPage(Request $request)
     {
         $videosPlaylist = Video::getVideosByPlaylistId($request->playlist_id);
@@ -25,6 +28,7 @@ class VideoController extends Controller
         // var_dump($note);die();
         return view('video.video', [
             'video' => $video,
+            'playlistId'=>$request->playlist_id,
             'videosPlaylist' => $videosPlaylist['items'],
             'note'=>($note ?? ['title'=>null,'description'=>null]),
         ]);
