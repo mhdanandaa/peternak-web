@@ -52,10 +52,10 @@
                     <span class="text-white">Catatan</span>
                     <div class="flex flex-col">
                         <input type="text" id="noteTitle"
-                            class="border-transparent bg-transparent border-x-0 border-t-0 focus:ring-0 bg-meta border-b-4 border-ungu-font text-xl p-0"
+                            class="border-transparent bg-transparent border-x-0 border-t-0 focus:ring-0 text-white bg-meta border-b-4 border-ungu-font text-xl p-0"
                             placeholder="Title" value="{{ $note['title'] ?? '' }}">
                         <textarea id="noteDescription"
-                            class="border-transparent bg-transparent border-x-0 border-t-0 focus:ring-0 bg-meta border-b-4 border-ungu-font  p-0"
+                            class="border-transparent bg-transparent border-x-0 border-t-0 focus:ring-0 text-white bg-meta border-b-4 border-ungu-font  p-0"
                             placeholder="Write a note" rows="3">{{ $note['description'] ?? '' }}</textarea>
                         <div class="mt-2">
 
