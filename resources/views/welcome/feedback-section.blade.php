@@ -23,11 +23,11 @@
         <p class="leading-relaxed mb-5 text-white">Saran dan kritik dari anda akan sangat membantu kami untuk lebih baik
 
         </p>
-        <div class="relative mb-4" data-aos="fade-down">
+        <div class="relative mb-4" data-aos="fade-up">
           <label for="name" class="leading-7 text-sm text-white">Name</label>
           <input type="text" id="name" name="name" class="w-full bg-meta-pudar rounded border-b-4 border-white hover:border-ungu-font text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
-        <div class="relative mb-4" data-aos="fade-left">
+        <div class="relative mb-4" data-aos="fade-up">
           <label for="email" class="leading-7 text-sm text-white">Email</label>
           <input type="email" id="email" name="email" class="w-full  bg-meta-pudar rounded border-b-4 border-white hover:border-ungu-font text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>

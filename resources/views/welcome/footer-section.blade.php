@@ -29,7 +29,7 @@
               <h2 class="mb-6 text-sm font-semibold text-white uppercase">Follow us</h2>
               <ul class="text-gray-400 ">
                   <li class="mb-4">
-                      <a href="https://www.instagram.com/peternakweb/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" class="hover:text-slate-900 ">Instagram</a>
+                      <a href="https://www.instagram.com/peternakweb/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="hover:text-slate-900 ">Instagram</a>
                   </li>
               </ul>
           </div>

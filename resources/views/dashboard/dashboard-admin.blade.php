@@ -23,11 +23,6 @@
                         class="flex  justify-center text-biru-tosca bg-white rounded-full shadow py-4">Module Settings</a> </li>
             </ul>
         </div>
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-white font-semibold">
-            <x-nav-link class="text-white" :href="route('user')" :active="request()->routeIs('user')">
-                {{ __('Daftar Pengguna') }}
-            </x-nav-link>
-        </div>
     </div>
     <section id="moduleTab" name='tab'class="text-gray-600 body-font block bg-meta">
         <div class="container px-5 py-5 mx-auto">

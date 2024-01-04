@@ -1,21 +1,21 @@
 <x-my-app-layout>
     <x-navigation></x-navigation>
-    <section class="mx-10">
+    <section class="mx-10 md:mx-10 mb-10">
         <select onchange="toggleTab(this.value)"
             class="cursor-pointer text-white bg-ungu-font border-0 py-1 px-3 focus:outline-none hover:bg-ungu-void rounded text-base mb-2 md:mt-0"
-            name="" id="">
+            name="" id="" data-aos="fade-down">
             <option value="saved" selected>Saved video</option>
             <option value="liked">Liked video</option>
         </select>
-        <div id="saved-video-list">
+        <div id="saved-video-list" data-aos="fade-up">
 
-            <div  style="display: none" class=" bg-gray-600 p-2 flex items-center ">
-                <div class="w-1/6 mx-1">
+            <div  style="display: none" class="p-2 md:flex-row flex flex-col items-center ">
+                <div class="w-full lg:w-80 mx-1 mb-4 md:mb-0">
                     <img src="https://i.ytimg.com/vi/mD6uSGSjgr4/hqdefault.jpg" alt=""
                         class="rounded-lg object-cover object-center w-full aspect-video">
                 </div>
-                <div class="mx-1 w-4/6 h-full flex flex-col ">
-                    <article class="line-clamp-1 text-lg text-white">
+                <div class="mx-1 w-full md:w-1/2 lg:w-2/3 flex flex-col">
+                    <article class="line-clamp-1 text-white text-2xl mb-4 font-medium border-b lg:pb-5 pb-10 border-white">
                         <h1>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vero, ullam expedita
                             consequuntur nesciunt ipsum maiores consequatur laudantium eos ipsa nobis deserunt id animi?
@@ -24,17 +24,18 @@
                             aliquam eos assumenda at aspernatur sapiente beatae, quo odit maxime.
                         </h1>
                     </article>
-                    <h1 class="text-sm text-white">
+                    <h1 class="text-purple-400 text-base border-b lg:pb-5 pb-5 border-white mb-5">
                         chanel
                     </h1>
                 </div>
+
                 <div class="flex flex-col items-center">
                     <a href=""
                         class="cursor-pointer text-white bg-ungu-font border-0 py-1 px-3 focus:outline-none hover:bg-ungu-void rounded text-base mb-2 md:mt-0"
                         data-aos="fade-right">Lihat
                         detail</a>
                     <a href=""
-                        class="cursor-pointer text-white bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-base ml-auto md:mt-0"
+                        class="cursor-pointer text-white bg-red-600 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-base ml-auto md:mt-0"
                         data-aos="fade-right">Lihat
                         di youtube</a>
                 </div>
@@ -42,13 +43,13 @@
         </div>
         <div id="liked-video-list" style="display: none">
 
-            <div style="display: none"  class=" bg-gray-600 p-2 flex items-center ">
-                <div class="w-1/6 mx-1">
+            <div  style="display: none" class="p-2 md:flex-row flex flex-col items-center ">
+                <div class="w-full lg:w-80 mx-1 mb-4 md:mb-0">
                     <img src="https://i.ytimg.com/vi/mD6uSGSjgr4/hqdefault.jpg" alt=""
                         class="rounded-lg object-cover object-center w-full aspect-video">
                 </div>
-                <div class="mx-1 w-4/6 h-full flex flex-col ">
-                    <article class="line-clamp-1 text-lg text-white">
+                <div class="mx-1 w-full md:w-1/2 lg:w-2/3 flex flex-col">
+                    <article class="line-clamp-1 text-white text-2xl mb-4 font-medium border-b lg:pb-5 pb-10 border-white">
                         <h1>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vero, ullam expedita
                             consequuntur nesciunt ipsum maiores consequatur laudantium eos ipsa nobis deserunt id animi?
@@ -57,7 +58,7 @@
                             aliquam eos assumenda at aspernatur sapiente beatae, quo odit maxime.
                         </h1>
                     </article>
-                    <h1 class="text-sm text-white">
+                    <h1 class="text-purple-400text-base border-b lg:pb-5 pb-5 border-white mb-5">
                         chanel
                     </h1>
                 </div>
@@ -67,7 +68,7 @@
                         data-aos="fade-right">Lihat
                         detail</a>
                     <a href="" target="_blank"
-                        class="cursor-pointer text-white bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-base ml-auto md:mt-0"
+                        class="cursor-pointer text-white bg-red-600 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-base ml-auto md:mt-0"
                         data-aos="fade-right">Lihat
                         di youtube</a>
                 </div>

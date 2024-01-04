@@ -32,6 +32,9 @@
                     <x-nav-link class="text-white" :href="route('team')" :active="request()->routeIs('team')">
                         {{ __('About Us') }}
                     </x-nav-link>
+                    <x-nav-link class="text-white" :href="route('video.saved')" :active="request()->routeIs('video.saved')">
+                        {{ __('Liked Video') }}
+                    </x-nav-link>
                 </div>
                 @endauth
             </div>
@@ -107,6 +110,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('team')" :active="request()->routeIs('team')">
                 {{ __('About Us') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('video.saved')" :active="request()->routeIs('video.saved')">
+                {{ __('Liked Video') }}
             </x-responsive-nav-link>
 
         </div>

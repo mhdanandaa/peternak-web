@@ -8,7 +8,7 @@
 
             @foreach ($playlist as $playlistItem)
                 @if (Auth::check())
-                    <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
+                    <div class="xl:w-1/3 md:w-1/2 p-4 " data-aos="fade-up">
                         <div class="bg-meta border-2 border-ungu-font p-6 rounded-lg text-sm">
                             <img class="aspect-video rounded w-full object-cover object-center mb-6"
                                 src="{{ $playlistItem['snippet']['thumbnails']['high']['url'] }}" alt="content">
@@ -77,7 +77,7 @@
             @endforeach
         </div>
         @if (Auth::guest())
-            <div class="flex justify-center mt-10" data-aos="fade-down">
+            <div class="flex justify-center mt-10">
 
                 <div class="bg-white border-2 border-ungu-font p-6 rounded-lg text-sm h-48 w-3/4 text-center mb-8">
                     <h1 class="font-medium text-3xl text-grey-pudar">Tunggu apa lagi?</h1>
